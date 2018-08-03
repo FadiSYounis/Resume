@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Fadi}{Younis}{
+\href{mailto:fyounis@ryerson.ca}{fadiyounis.atwork@gmail.com} | Toronto | 416.419.2908 |
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Ryerson University}
+\descript{M.Sc. in Computer Science (thesis-based)}
+\location{June 2018 | Toronto, Ontario \\ Cum. GPA: 4.25/4.33}
+Department of Computer Science
+\bigbreak
+- Taught intro courses in Web Dev, C, MATLAB and R. 
+\sectionsep
+
+\subsection{Ryerson University}
+\descript{B.Sc. in Computer Science (Honours)}
+\location{June 2014 | Toronto, Ontario \\ Cum. GPA: 3.10/4.33}
+Department of Computer Science \\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\textbullet{} Github://  \href{https://github.com/FadiSYounis}{\custombold{FadiSYounis}} \\
+\textbullet{} LinkedIn://  \href{https://ca.linkedin.com/in/fadiyounis}{\custombold{fadiyounis}} \\
+\textbullet{} Research Gate://\href{https://www.researchgate.net/profile/Fadi_Younis3}{\custombold{fadiyounis3}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Secure Computing\\
+Web-Services Software Engineering\\
+Advanced Database Systems \\
+Soft Computing and Machine Intelligence \\
+Machine Learning and Statistical Learning \\
+Independent Directed Studies
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages}
+\location{Over 10,000 Lines:}
+\textbullet{} Python \textbullet{} R \textbullet{} SQL \textbullet{}  MATLAB
+\bigbreak
+\location{Technologies and Frameworks:}
+\textbullet{} Eclipse \textbullet{} Tensorflow \textbullet{} NLP
+\bigbreak
+\location{Familiar With:}
+\textbullet{} C++ \textbullet{} GO \textbullet{} Django
+\section{Recognition}
+\subsection{Awards}
+\textbullet{} Nominated For the Governor General Gold Medal (GGGM) - 2018
+\bigbreak
+\textbullet{} Receiver of the MITACS Accelerate Grant - 2017
+\bigbreak
+\textbullet{} Receiver of the Ontario Graduate Scholarship Program (OGS) - 2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{IG2 Group Inc.}
+\descript{| Graduate Researcher Intern | Full-Stack}
+\location{Jan 2017 - Jan 2018 | Toronto, Ont. }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Worked with fellow researchers to implement a proprietary patent on Encrypted Search through the MITACS innovation research grant\\
+\item Patent - Efficient Computations on Encrypted Data Stored in the Cloud (https://www.mitacs.ca/en/projects/efficient-computations-encrypted-data-stored-cloud)
+\item Tools Used - Python, Djnago, Bash, Flask, 3-rd party Encryption Libraries.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ontario Government}
+\descript{| Application Developer and Analyst}
+\location{Jan 2014 – Feb 2015 | Toronto, Ont. }
+\begin{tightemize}
+\item Independently designed and implemented the v1 of a log filter to analyze government specific Apache server log files targeted for usage by senior management. The application was built using the Java Enterprise. 
+\item Designed and wrote repeatable tests for the log filter and other applications using the JUnit testing framework on the Eclipse development environment.
+\item  Documented hundreds of usability bugs with accurate technical descriptions and provided comprehensive but concise steps to reproduce them.
+\item Performed Unit acceptance testing (UAT) on proprietary government software projects to find faults in the business documentation, application design, and overall performance.
+\item Tools Used - Java SE, Bash, JUnit, Eclipse, 3-rd party JSON libraries.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Projects}
+\descript{| Personal and Academic }
+\location{Below are the ones highlighted. Visit my profile (FadiSYounis) for details.}
+\begin{tightemize}
+\item Ubuntu Miner (Ruby), Mines the entire Ubuntu OS for source code - Academic
+\item World's Smallest Blockchain (Java), Blockchain Chain generated in Java - Personal
+\item CV/Resume (Latex), Built my resume in Latex because it better - Personal
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications and Research}
+\runsubsection{ACM Journal Paper - In Progress}
+\descript{| July 2018 }
+\location{Using Honeypots In A Decentralized Framework To Defend Against Adversarial Machine-Learning Attacks}
+\begin{tightemize}
+\item Under the supervision of \textbf{Dr. Ali Miri, Ph.D, P.Eng.} I completed my research and defended my thesis in the area of Adversarial Machine-Learning. This journal paper represents a summary of my thesis findings. 
+\item Thesis Dissertation - https://goo.gl/KMqdzb
+\item Thesis Conference paper (draft) - https://goo.gl/WfBUcg
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IEEE Conference Paper - Publication accepted}
+\descript{| July 2017 }
+\location{An Analysis of the Security of Compressed Sensing Using an Artificial Neural Network}
+\begin{tightemize}
+\item Worked with \textbf{Shadan Ghaffari}, \textbf{Dr. Wilson Poon} and Professor \textbf{Ali. Miri}, We showed that, using a neural network, we can predict the key to decrypt the data and reveal valuable information about the data stored.
+\item Published at the \textit{Privacy, Security and Trust} (PST) conference at the UofCalgary
+\item Conference paper - https://goo.gl/fKGPwA
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
