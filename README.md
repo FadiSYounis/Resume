@@ -1,5 +1,9 @@
 This is my resume, built using LateX. 
 
+Go on, open the PDF! Look how cripy and neat it is. 
+
+This is my resume, there are many like it but this one is mine.
+
 # FAQ
 
 ### Hey, How do I view your resume?
